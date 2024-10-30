@@ -2,7 +2,7 @@
 This repository demonstrates how to interact with Azure Blob Storage using C# and the Azure SDK. The code in this example performs basic operations, including creating a blob container, uploading and downloading blobs, and listing blobs in a container. It also demonstrates authentication with Azure using the DefaultAzureCredential class, allowing for secure, passwordless access to Azure resources.
 
 # Prerequisites:
-* .NET SDK (v6.0 or later)
+* [.NET SDK (v6.0 or later)](https://dotnet.microsoft.com/en-us/download)
 * Azure Storage Account with Blob Storage enabled
 * Azure CLI for account setup and resource management (optional)
 
