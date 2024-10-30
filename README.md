@@ -17,8 +17,8 @@ This project relies on the Azure.Storage.Blobs and Azure.Identity packages. Run 
 * dotnet add package Azure.Identity
 
 ### Update Configuration:
-Replace <storage-account-name> in the code with your actual storage account name.
-Ensure you have configured your Azure environment to support DefaultAzureCredential. This could be through an Azure service principal or user account with access to the storage account.
+* Replace <storage-account-name> in the code with your actual storage account name.
+* Ensure you have configured your Azure environment to support DefaultAzureCredential. This could be through an Azure service principal or user account with access to the storage account.
 
 # Code overview
 The sample code performs the following steps:
