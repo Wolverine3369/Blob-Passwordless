@@ -11,12 +11,12 @@ This repository demonstrates how to interact with Azure Blob Storage using C# an
 ### Clone the repository:
 git clone https://github.com/Wolverine3369/Blob-Passwordless.git
 
-## Install Dependencies: 
+### Install Dependencies: 
 This project relies on the Azure.Storage.Blobs and Azure.Identity packages. Run the following commands in the project directory:
 * dotnet add package Azure.Storage.Blobs
 * dotnet add package Azure.Identity
 
-## Update Configuration:
+### Update Configuration:
 Replace <storage-account-name> in the code with your actual storage account name.
 Ensure you have configured your Azure environment to support DefaultAzureCredential. This could be through an Azure service principal or user account with access to the storage account.
 
@@ -30,17 +30,17 @@ The sample code performs the following steps:
 * Clean Up resources by deleting the container and local files.
 
 # Usage
-## Run the Application:
+### Run the Application:
 Execute the application with: dotnet run
 
-## Expected Output:
+### Expected Output:
 The application will:
 * Create and upload a blob to Azure Blob Storage.
 * List the blob in the console output.
 * Download the blob back to a local file.
 * Delete the created container and files after execution.
 
-## Customize:
+### Customize:
 You can modify containerName, fileName, or the file contents in localFilePath to explore additional use cases.
 
 # Notes:
