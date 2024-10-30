@@ -8,7 +8,7 @@ This repository demonstrates how to interact with Azure Blob Storage using C# an
 * **Azure Identity Setup:** Ensure you have appropriate permissions on the Azure Storage Account for passwordless authentication.
 
 # Setup
-## Clone the repository:
+### Clone the repository:
 git clone https://github.com/Wolverine3369/Blob-Passwordless.git
 
 ## Install Dependencies: 
