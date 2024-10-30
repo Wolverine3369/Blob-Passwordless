@@ -18,13 +18,15 @@ This project relies on the Azure.Storage.Blobs and Azure.Identity packages. Run 
 
 ### Update Configuration:
 * Replace <storage-account-name> in the code with your actual storage account name.
-* Ensure you have configured your Azure environment to support DefaultAzureCredential. This could be through an Azure service principal or user account with access to the storage account. The DefaultAzureCredential class from the Azure SDK tries to authenticate by chaining through several different credential sources in a specific order. Here’s the order it follows:
-** Environment Variables: It first checks for environment variables that may contain credentials. 
-** Managed Identity: If no environment variables are found, DefaultAzureCredential attempts to use a managed identity. This is relevant when running in environments like Azure Virtual Machines, Azure App Service, Azure Kubernetes Service, or Azure Functions, where Managed Identity is enabled.
-** Visual Studio / Visual Studio Code Signed-In Account: If you’re running locally and signed into Visual Studio or Visual Studio Code with an Azure account, it will try to authenticate using that account.
-** Azure CLI: If the Azure CLI is installed and you’re logged in (az login), DefaultAzureCredential will use the credentials from the CLI.
-** Azure PowerShell: If the Azure PowerShell module is installed and you’re logged in (Connect-AzAccount), it will try to use these credentials.
-** Interactive Browser Login (Fallback): As a last resort, on development machines, it may prompt you to log in interactively through a browser.
+* Ensure you have configured your Azure environment to support DefaultAzureCredential. This could be through an Azure service principal or user account with access to the storage account. The DefaultAzureCredential class from the Azure SDK tries to authenticate by chaining through several different credential sources in a specific order.
+
+* Here’s the order it follows:
+**Environment Variables:** It first checks for environment variables that may contain credentials. 
+**Managed Identity:** If no environment variables are found, DefaultAzureCredential attempts to use a managed identity. This is relevant when running in environments like Azure Virtual Machines, Azure App Service, Azure Kubernetes Service, or Azure Functions, where Managed Identity is enabled.
+**Visual Studio / Visual Studio Code Signed-In Account:** If you’re running locally and signed into Visual Studio or Visual Studio Code with an Azure account, it will try to authenticate using that account.
+**Azure CLI:** If the Azure CLI is installed and you’re logged in (az login), DefaultAzureCredential will use the credentials from the CLI.
+**Azure PowerShell:** If the Azure PowerShell module is installed and you’re logged in (Connect-AzAccount), it will try to use these credentials.
+**Interactive Browser Login (Fallback):** As a last resort, on development machines, it may prompt you to log in interactively through a browser.
 
 # Code overview
 The sample code performs the following steps:
