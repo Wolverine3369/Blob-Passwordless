@@ -1,4 +1,4 @@
-Azure Blob Storage Quickstart:
+# Azure Blob Storage Quickstart:
 This repository demonstrates how to interact with Azure Blob Storage using C# and the Azure SDK. The code in this example performs basic operations, including creating a blob container, uploading and downloading blobs, and listing blobs in a container. It also demonstrates authentication with Azure using the DefaultAzureCredential class, allowing for secure, passwordless access to Azure resources.
 
 Prerequisites:
