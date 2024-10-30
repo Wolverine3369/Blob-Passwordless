@@ -5,7 +5,7 @@ This repository demonstrates how to interact with Azure Blob Storage using C# an
 * [.NET SDK (v6.0 or later)](https://dotnet.microsoft.com/en-us/download)
 * [Azure Storage Account with Blob Storage enabled](https://portal.azure.com/)
 * [Azure CLI for account setup and resource management (optional)](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
-* **Azure Identity Setup:** Ensure you have appropriate permissions on the Azure Storage Account for passwordless authentication.
+* **Azure Identity Setup:** Ensure you have appropriate permissions on the Azure Storage Account for passwordless authentication. (Check below "Update configuration".)
 
 # Setup
 ### Clone the repository:
